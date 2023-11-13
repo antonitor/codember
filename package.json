@@ -1,0 +1,14 @@
+{
+  "name": "codember",
+  "version": "1.0.0",
+  "description": "Codember es un juego y reto de programación que se realiza en el mes de noviembre para la comunidad de [midudev](https://www.twitch.tv/midudev).",
+  "main": "index.js",
+  "type": "module",
+  "author": "antonitor",
+  "license": "ISC",
+  "keywords": [
+    "codember",
+    "challenges",
+    "midudev"
+  ]
+}
