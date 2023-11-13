@@ -1,3 +1,7 @@
+import fs from 'fs';
+
+const message_01 = fs.readFileSync('message_01.txt', 'utf-8');
+
 function contarPalabras(mensaje) {
     // Convertir el mensaje a minúsculas y dividirlo en palabras
     const palabras = mensaje.toLowerCase().split(' ');
@@ -22,10 +26,4 @@ function contarPalabras(mensaje) {
     return resultado;
 }
 
-const mensaje = process.argv[2]
-if (!mensaje) {
-    console.log('Introduce el mensaje entre comillas dobles "" por consola')
-    return
-}
-
-console.log("CONTAR PALABAS:", contarPalabras(process.argv[2]))
+console.log("Resultado de contar palabras:", contarPalabras(message_01))
