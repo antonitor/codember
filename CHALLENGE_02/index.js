@@ -1,3 +1,7 @@
+import fs from 'fs';
+
+const message_02 = fs.readFileSync('message_02.txt', 'utf-8');
+
 function miniCompilador(entrada) {
     // Valor numérico inicial
     let valor = 0;
@@ -30,10 +34,4 @@ function miniCompilador(entrada) {
     return resultado;
 }
 
-const mensaje = process.argv[2]
-if (!mensaje) {
-    console.log('Introduce el argumento entre comillas dobles "" por consola')
-    return
-}
-
-console.log("Compilador:", miniCompilador(process.argv[2]))
+console.log("Resultado mini-compilador:", miniCompilador(message_02))
